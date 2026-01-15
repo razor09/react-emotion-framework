@@ -30,13 +30,13 @@
     "react-transition-group": "4.4.5"
   },
   "devDependencies": {
-    "@babel/core": "7.28.5",
+    "@babel/core": "7.28.6",
     "@emotion/babel-plugin": "11.13.5",
     "@emotion/react": "11.14.0",
     "@emotion/styled": "11.14.1",
     "@faker-js/faker": "10.2.0",
     "@types/http-server": "0.12.4",
-    "@types/node": "25.0.6",
+    "@types/node": "25.0.9",
     "@types/react": "19.2.8",
     "@types/react-dom": "19.2.3",
     "@types/react-transition-group": "4.4.12",
@@ -45,7 +45,7 @@
     "http-server": "14.1.1",
     "msw": "2.12.7",
     "npm-check-updates": "19.3.1",
-    "prettier": "3.7.4",
+    "prettier": "3.8.0",
     "simple-git-hooks": "2.13.1",
     "terser-webpack-plugin": "5.3.16",
     "ts-loader": "9.5.4",
@@ -53,6 +53,6 @@
     "typescript": "5.9.3",
     "webpack": "5.104.1",
     "webpack-cli": "6.0.1",
-    "webpack-dev-server": "5.2.2"
+    "webpack-dev-server": "5.2.3"
   }
 }
