@@ -1,0 +1,56 @@
+{
+  "scripts": {
+    "mocks:dev": "npm run serve:dev -- --name mocks",
+    "mocks:prod": "npm run serve:prod -- --name mocks",
+    "serve:dev": "npm run serve -- --mode development",
+    "serve:prod": "npm run serve -- --mode production",
+    "serve": "webpack serve --config webpack/config.ts",
+    "build": "webpack --config webpack/config.ts --mode production",
+    "generate": "ts-node tools/codegen/generate.ts",
+    "lint": "prettier --write .",
+    "fetch": "rm -rf node_modules && npm ci",
+    "update": "ncu -u && rm -rf node_modules package-lock.json && npm i"
+  },
+  "prettier": {
+    "printWidth": 150,
+    "semi": false,
+    "singleQuote": true,
+    "singleAttributePerLine": true
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npm run build && npm run lint && git add --all"
+  },
+  "msw": {
+    "workerDirectory": "public"
+  },
+  "dependencies": {
+    "mobx": "6.15.0",
+    "mobx-react-lite": "4.1.1",
+    "react": "19.2.5",
+    "react-dom": "19.2.5",
+    "react-router-dom": "7.14.2"
+  },
+  "devDependencies": {
+    "@babel/core": "7.29.0",
+    "@emotion/babel-plugin": "11.13.5",
+    "@emotion/react": "11.14.0",
+    "@emotion/styled": "11.14.1",
+    "@faker-js/faker": "10.4.0",
+    "@types/node": "25.6.0",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "babel-loader": "10.1.1",
+    "html-webpack-plugin": "5.6.7",
+    "msw": "2.14.2",
+    "npm-check-updates": "22.0.1",
+    "prettier": "3.8.3",
+    "simple-git-hooks": "2.13.1",
+    "terser-webpack-plugin": "5.5.0",
+    "ts-loader": "9.5.7",
+    "ts-node": "10.9.2",
+    "typescript": "6.0.3",
+    "webpack": "5.106.2",
+    "webpack-cli": "7.0.2",
+    "webpack-dev-server": "5.2.3"
+  }
+}
