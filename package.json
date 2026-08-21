@@ -11,9 +11,6 @@
     "fetch": "rm -rf node_modules && npm ci",
     "update": "ncu -u && rm -rf node_modules package-lock.json && npm i"
   },
-  "msw": {
-    "workerDirectory": "."
-  },
   "simple-git-hooks": {
     "pre-commit": "npm run build && npm run lint && git add --all"
   },
