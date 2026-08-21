@@ -1,0 +1,20 @@
+import { css } from '@emotion/react'
+import { default as styled } from '@emotion/styled'
+import { observer } from 'mobx-react-lite'
+import { __arg__Props } from './typings'
+
+export const __arg__ = observer<__arg__Props>(() => {
+  return (
+    <Container>
+      <div css={inner}>__arg__</div>
+    </Container>
+  )
+})
+
+const Container = styled.div`
+  background: inherit;
+`
+
+const inner = css`
+  background: inherit;
+`
