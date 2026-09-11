@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "@emotion/react",
+    "module": "esnext",
+    "target": "esnext",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
+  }
+}
